@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+fieldset {
+    border: 0;
+    margin-top: 1em;
+    padding: 0;
+  }
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    background: #2d3945;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+legend {
+    color: #2d3945;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    font-weight: bold;
+}
+
+.first-fieldset legend {
+    padding-top: .7em;
+}
+
+.first-fieldset {
+    text-align: center;
+    padding-bottom: 2em;
+    border-bottom: 4px solid #2d3945;
+}
+
+.second-fieldset {
+    margin-bottom: 1em;
+}
+
+.second-fieldset input, 
+.second-fieldset label {
+   display: block;
+   margin: .5em 0;
+}
+
+.second-fieldset input, 
+select, textarea {
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: .3em;
+    background: #eff0f1;
+    padding-left: 1em;
+}
+
+textarea {
+    height: 6em;
+    padding-top: .7em;
+}
+
+.second-fieldset input, 
+select, textarea {
+    transition: transform 1s;
+}
+
+
+.second-fieldset input:focus, 
+select:focus, textarea:focus  {
+    outline: 0;
+    border: 2px solid #46698b;
+    transform: scale(1.03);
+}
+
+textarea:focus  {
+    border: 4px solid #f3a848; 
+}
+
+.second-fieldset input:last-of-type {
+    width: 50%;
+}
+
+
+input:first-of-type::placeholder,
+input:nth-of-type(2)::placeholder {
+    text-align: right;
+    padding-right: 1.3em;
+    font-style: italic;
+    color: #ccc;
+    font-size: .8em;
+}
+
+input:nth-of-type(n+3)::placeholder,
+.place_holder {
+    color: #ccc;
+}
+
+
+
+option {
+    color: black;
+}
+
+.border {
+    width: 100%;
+    margin-top: 2px;
+    border-top: 2px solid #2d3945;
+}
+
+p, label {
+    color: #8693a0;
+}
+
+.third-fieldset input, 
+.third-fieldset label {
+    margin: 1em 0 0 .5em;
+}
+
+.third-fieldset p:nth-of-type(2) {
+    margin-top: 1em;
+}
+
+.third-fieldset label:last-of-type {
+    display: block;
+    margin: 1em 0;
+}
+
+button {
+    margin-top: 1.5em;
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: .3em;
+    color: white;
+    background: #4aba99;
+}
+
+footer p {
+    margin: 3em auto;
+    max-width: 10.1em;
+    font-style: italic;
+}
+
+.third-fieldset label,
+.third-fieldset p {
+    color: #ccc;
+}
+
+.third-fieldset legend {
+    color: #f3a848;
+    padding-bottom: 1.5em;
+}
+#bg {
+    margin-top: 1em;
+    padding: 1em;
+    background: #2d3945;
+    border-radius: 1em;
+    border: 4px solid #f3a848;
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 1.2em;
+        padding: 1.3em;
+    }
+    
+    legend {
+        padding-top: 1em;
+    }
+
+    .first-fieldset legend {
+        padding-top: 1.5em;
+    }
+
+    .first-fieldset {
+        padding-bottom: 3em;
+    }
+
+    .third-fieldset p, label {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .container {
+        max-width: 40rem;
+    }
+
+    .second-fieldset input, 
+    .second-fieldset label {
+   display: inline-block;
+    }
+
+    .second-fieldset input, select {
+        width: 75%;
+    }
+
+    .second-fieldset label {
+        width: 20%;
+    }
+    .second-fieldset input:last-of-type {
+        width: 25%;
+    }
+
+    button {
+        font-size: 1.2em;
+        font-weight: bold;
+        height: 4em;
+    }
+}
+
+
+
+
+
