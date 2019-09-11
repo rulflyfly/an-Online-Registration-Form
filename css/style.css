@@ -54,6 +54,10 @@ legend {
    margin: .5em 0;
 }
 
+.second-fieldset label {
+    padding-top: .7em;
+}
+
 .second-fieldset input, 
 select, textarea {
     width: 100%;
@@ -206,6 +210,7 @@ footer p {
     }
 
     .second-fieldset label {
+        padding-top: 0;
         width: 20%;
     }
     .second-fieldset input:last-of-type {
